@@ -28,3 +28,7 @@ python LinearWarmupCosineAnnealingLR.py <warmup_epochs> <max_epochs> <warmup_sta
 - max_epochs: Maximum number of epochs
 - warmup_start_lr: Learning rate to start the linear warmup. Default: 0.
 - eta_min: Minimum learning rate. Default: 0.
+
+<p align="center">
+<img src="https://github.com/come880412/DL_common/blob/main/images/lr_decay.png" width=40% height=40%>
+</p>
