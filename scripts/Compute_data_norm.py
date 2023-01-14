@@ -1,5 +1,5 @@
 '''
-Getting normalized mean and std for an image dataset:
+Getting normalized mean and std for an image dataset.
 python Compute_data_norm.py <image_dir> <image_size>
 '''
 
