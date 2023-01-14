@@ -1,5 +1,6 @@
 '''
-"LinearWarmupCosineAnnealing" Learning rate scheduler trick decaying by epoch
+"LinearWarmupCosineAnnealing" Learning rate scheduler trick decaying by epoch.
+python LinearWarmupCosineAnnealingLR.py <warmup_epochs> <max_epochs> <warmup_start_lr> <eta_min>
 '''
 
 from torch.optim.lr_scheduler import _LRScheduler
