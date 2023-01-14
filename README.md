@@ -30,5 +30,5 @@ python LinearWarmupCosineAnnealingLR.py <warmup_epochs> <max_epochs> <warmup_sta
 - eta_min: Minimum learning rate. Default: 0.
 
 <p align="center">
-<img src="https://github.com/come880412/DL_common/blob/main/images/lr_decay.png" width=40% height=40%>
+<img src="https://github.com/come880412/DL_common/blob/main/images/lr_decay.png" width=60% height=60%>
 </p>
