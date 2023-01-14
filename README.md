@@ -18,3 +18,13 @@ python Compute_data_norm.py <image_dir> <image_size>
 ```
 - image_dir: Path to image dataset
 - image_size: Resize image to the given size parameter
+
+### [LinearWarmupCosineAnnealingLR.py](https://github.com/come880412/DL_common/blob/main/LinearWarmupCosineAnnealingLR.py)
+"LinearWarmupCosineAnnealing" Learning rate scheduler trick decaying by epoch
+```bash
+python LinearWarmupCosineAnnealingLR.py <warmup_epochs> <max_epochs> <warmup_start_lr> <eta_min>
+```
+- warmup_epochs: Maximum number of epochs for linear warmup
+- max_epochs: Maximum number of epochs
+- warmup_start_lr: Learning rate to start the linear warmup. Default: 0.
+- eta_min: Minimum learning rate. Default: 0.
