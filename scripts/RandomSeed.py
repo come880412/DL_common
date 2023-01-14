@@ -9,7 +9,7 @@ import torch
 import argparse
 
 
-def setup_random_seed(seed):
+def setup_random_seed(seed: int):
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
