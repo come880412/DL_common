@@ -39,3 +39,9 @@ Fix random seed for program reproducible.
 python RandomSeed.py <seed>
 ```
 - seed: Set random seed what you want
+
+### [Metric.py](https://github.com/come880412/DL_common/blob/main/scripts/Metric.py)
+Compute acc, auc, precision, recall, and F1-score.
+```bash
+python Metric.py
+```
