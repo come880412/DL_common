@@ -11,16 +11,16 @@ pip install -r requirements.txt
 ```
 
 ## Implementations
-### [Compute_data_norm.py](https://github.com/come880412/DL_common/blob/main/Compute_data_norm.py)
-Getting normalized mean and std for an image dataset
+### [Compute_data_norm.py](https://github.com/come880412/DL_common/blob/main/scripts/Compute_data_norm.py)
+Getting normalized mean and std for an image dataset.
 ```bash
 python Compute_data_norm.py <image_dir> <image_size>
 ```
 - image_dir: Path to image dataset
 - image_size: Resize image to the given size parameter
 
-### [LinearWarmupCosineAnnealingLR.py](https://github.com/come880412/DL_common/blob/main/LinearWarmupCosineAnnealingLR.py)
-"LinearWarmupCosineAnnealing" Learning rate scheduler trick decaying by epoch
+### [LinearWarmupCosineAnnealingLR.py](https://github.com/come880412/DL_common/blob/main/scripts/LinearWarmupCosineAnnealingLR.py)
+"LinearWarmupCosineAnnealing" Learning rate scheduler trick decaying by epoch.
 ```bash
 python LinearWarmupCosineAnnealingLR.py <warmup_epochs> <max_epochs> <warmup_start_lr> <eta_min>
 ```
@@ -32,3 +32,10 @@ python LinearWarmupCosineAnnealingLR.py <warmup_epochs> <max_epochs> <warmup_sta
 <p align="center">
 <img src="https://github.com/come880412/DL_common/blob/main/images/lr_decay.png" width=60% height=60%>
 </p>
+
+### [RandomSeed.py](https://github.com/come880412/DL_common/blob/main/scripts/RandomSeed.py)
+Fix random seed for program reproducible.
+```bash
+python RandomSeed.py <seed>
+```
+- seed: Set random seed what you want
