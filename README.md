@@ -24,8 +24,8 @@ python Compute_data_norm.py <image_dir> <image_size>
 ```bash
 python LinearWarmupCosineAnnealingLR.py <warmup_epochs> <max_epochs> <warmup_start_lr> <eta_min>
 ```
-- warmup_epochs: Maximum number of epochs for linear warmup
-- max_epochs: Maximum number of epochs
+- warmup_epochs: Maximum number of epochs for linear warmup. Default:10
+- max_epochs: Maximum number of epochs. Default:100
 - warmup_start_lr: Learning rate to start the linear warmup. Default: 0.
 - eta_min: Minimum learning rate. Default: 0.
 
