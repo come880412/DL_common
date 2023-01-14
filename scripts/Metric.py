@@ -14,10 +14,15 @@ from sklearn.metrics import precision_recall_fscore_support
 class Metric():
     def __init__(self):
         pass
-    def get_acc(self, y_pred, y_true, task, threshold=0.5):
+    def get_acc(self, 
+                y_pred: np.array, 
+                y_true: np.array, 
+                task: str, 
+                threshold: float =0.5
+                ):
         """ ACC metric
-        y_pred (numpy array): the predicted result of each class, shape: (num_data, num_classes)
-        y_true (numpy array): the ground truth labels, shape: (num_data,) for 'multi-class' or (num_data, n_classes) for 'multi-label'
+        y_pred: the predicted result of each class, shape: (num_data, num_classes)
+        y_true: the ground truth labels, shape: (num_data,) for 'multi-class' or (num_data, n_classes) for 'multi-label'
         task: Task for current dataset ['multi-class', 'multi-label']
         threshold: the threshold for multi-label task
         """
@@ -39,7 +44,11 @@ class Metric():
         
         return correct / total
     
-    def get_auc(self, y_pred, y_true, task):
+    def get_auc(self, 
+                y_pred: np.array, 
+                y_true: np.array, 
+                task: str
+                ):
         '''AUC metric.
         y_pred: the predicted result of each class, shape: (num_data, n_classes)
         y_true: the ground truth labels, shape: (num_data,) for 'multi-class' or (num_data, n_classes) for 'multi-label'
@@ -61,7 +70,12 @@ class Metric():
             auc = auc / y_pred.shape[1]
         return auc
 
-    def get_PRF(self, y_pred, y_true, task, threshold=0.5):
+    def get_PRF(self, 
+                y_pred: np.array, 
+                y_true: np.array, 
+                task: str, 
+                threshold: float =0.5
+                ):
         """ Precision_Recall_F1score metrics
         y_pred: the predicted result of each class, shape: (num_data, num_classes)
         y_true: the ground truth labels, shape: (num_data,) for 'multi-class' or (num_data, n_classes) for 'multi-label'
