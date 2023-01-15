@@ -46,7 +46,7 @@ Compute acc, auc, precision, recall, and F1-score.
 python Metric.py
 ```
 
-### [Make_noisy_image.py](https://github.com/come880412/DL_common/blob/main/scripts/Metric.py)
+### [Make_noisy_image.py](https://github.com/come880412/DL_common/blob/main/scripts/Make_noisy_image.py)
 Reference: https://github.com/hendrycks/robustness \
 Make noise on an image, supporting the following noisy types: \
 gaussian_noise, shot_noise, impulse_noise, defocus_blur, glass_blur, motion_blur, zoom_blur, snow, frost, fog,
