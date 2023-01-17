@@ -254,12 +254,12 @@ def frost(x, severity=1):
     h = x.size[0]
     w = x.size[1]
     idx = np.random.randint(5)
-    filename = ['./data/noisy/frost1.png', 
-                './data/noisy/frost2.png', 
-                './data/noisy/frost3.png', 
-                './data/noisy/frost4.jpg', 
-                './data/noisy/frost5.jpg', 
-                './data/noisy/frost6.jpg'][idx]
+    filename = ['./data/frost/frost1.png', 
+                './data/frost/frost2.png', 
+                './data/frost/frost3.png', 
+                './data/frost/frost4.jpg', 
+                './data/frost/frost5.jpg', 
+                './data/frost/frost6.jpg'][idx]
     frost = cv2.imread(filename)
     frost = cv2.resize(frost, (0, 0), fx=5, fy=5)
     # randomly crop and convert to rgb
