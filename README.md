@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ### [Compute_data_norm.py](https://github.com/come880412/DL_common/blob/main/scripts/data/Compute_data_norm.py)
 Getting normalized mean and std for an image dataset.
 ```bash
-python Compute_data_norm.py <image_dir> <image_size>
+python scripts/data/Compute_data_norm.py <image_dir> <image_size>
 ```
 - image_dir: Path to image dataset
 - image_size: Resize image to the given size parameter
@@ -22,7 +22,7 @@ python Compute_data_norm.py <image_dir> <image_size>
 ### [LinearWarmupCosineAnnealingLR.py](https://github.com/come880412/DL_common/blob/main/scripts/scheduler/LinearWarmupCosineAnnealingLR.py)
 "LinearWarmupCosineAnnealing" Learning rate scheduler trick decaying by epoch.
 ```bash
-python LinearWarmupCosineAnnealingLR.py <warmup_epochs> <max_epochs> <warmup_start_lr> <eta_min>
+python scripts/scheduler/LinearWarmupCosineAnnealingLR.py <warmup_epochs> <max_epochs> <warmup_start_lr> <eta_min>
 ```
 - warmup_epochs: Maximum number of epochs for linear warmup. Default:10
 - max_epochs: Maximum number of epochs. Default:100
@@ -36,14 +36,14 @@ python LinearWarmupCosineAnnealingLR.py <warmup_epochs> <max_epochs> <warmup_sta
 ### [RandomSeed.py](https://github.com/come880412/DL_common/blob/main/scripts/utils/RandomSeed.py)
 Fix random seed for program reproducible.
 ```bash
-python RandomSeed.py <seed>
+python scripts/utils/RandomSeed.py <seed>
 ```
 - seed: Set random seed what you want
 
 ### [Metric.py](https://github.com/come880412/DL_common/blob/main/scripts/utils/Metric.py)
 Compute acc, auc, precision, recall, and F1-score.
 ```bash
-python Metric.py
+python scripts/utils/Metric.py
 ```
 
 ### [Make_noisy_image.py](https://github.com/come880412/DL_common/blob/main/scripts/data/Make_noisy_image.py)
@@ -52,7 +52,7 @@ Make noise on an image, supporting the following noisy types: \
 gaussian_noise, shot_noise, impulse_noise, defocus_blur, glass_blur, motion_blur, zoom_blur, snow, frost, fog,
 brightness, contrast, elastic_transform, pixelate, jpeg_compression, speckle_noise, gaussian_blur, spatter, saturate
 ```bash
-python Make_noisy_image.py <data_dir> <save_dir> <severity>
+python scripts/data/Make_noisy_image.py <data_dir> <save_dir> <severity>
 ```
 - data_dir: Path to image dataset
 - save_dir: Save image path
@@ -65,8 +65,15 @@ python Make_noisy_image.py <data_dir> <save_dir> <severity>
 ### [Compute_IoU.py](https://github.com/come880412/DL_common/blob/main/scripts/utils/Compute_IoU.py)
 Compute the IOU score of the given two bboxes
 ```bash
-python Compute_IoU.py <det_path> <gt_path> <format>
+python scripts/utils/Compute_IoU.py <det_path> <gt_path> <format>
 ```
 - det_path: Path to the folder containing your detected bounding boxes
 - gt_path: Path to the folder containing your ground truth bounding boxes
 - format: Format of the coordinates of the bounding boxes ('xywh': <left> <top> <width> <height> | 'xyrb': <left> <top> <right> <bottom>)
+
+### [NMS.py](https://github.com/come880412/DL_common/blob/main/scripts/utils/NMS.py)
+Compute the IOU score of the given two bboxes
+```bash
+python scripts/utils/NMS.py <det_path>
+```
+- det_path: Path to the folder containing your detected bounding boxes

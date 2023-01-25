@@ -1,6 +1,6 @@
 """
 Compute acc, auc, precision, recall, and F1-score.
-python Metric.py
+python scripts/utils/Metric.py
 """
 
 

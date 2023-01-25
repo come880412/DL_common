@@ -1,6 +1,6 @@
 """
 Fix random seed for program reproducible.
-python RandomSeed.py <seed>
+python scripts/utils/RandomSeed.py <seed>
 """
 
 import random

@@ -1,6 +1,6 @@
 '''
 Getting normalized mean and std for an image dataset.
-python Compute_data_norm.py <image_dir> <image_size>
+python scripts/data/Compute_data_norm.py <image_dir> <image_size>
 '''
 
 import os

@@ -3,7 +3,7 @@ Reference: https://github.com/hendrycks/robustness
 Make noise on an image, supporting the following noisy types:
 gaussian_noise, shot_noise, impulse_noise, defocus_blur, glass_blur, motion_blur, zoom_blur, snow, frost, fog,
 brightness, contrast, elastic_transform, pixelate, jpeg_compression, speckle_noise, gaussian_blur, spatter, saturate
-python Make_noisy_image.py <data_dir> <save_dir> <severity>
+python scripts/data/Make_noisy_image.py <data_dir> <save_dir> <severity>
 '''
 
 # -*- coding: utf-8 -*-
