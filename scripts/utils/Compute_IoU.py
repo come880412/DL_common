@@ -1,6 +1,6 @@
 """
 Compute the IOU score of the given two bboxes
-python Compute_IoU.py
+python scripts/utils/Compute_IoU.py
 """
 
 import glob
