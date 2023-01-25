@@ -72,7 +72,7 @@ python scripts/utils/Compute_IoU.py <det_path> <gt_path> <format>
 - format: Format of the coordinates of the bounding boxes ('xywh': <left> <top> <width> <height> | 'xyrb': <left> <top> <right> <bottom>)
 
 ### [NMS.py](https://github.com/come880412/DL_common/blob/main/scripts/utils/NMS.py)
-Compute the IOU score of the given two bboxes
+Implement NMS algorithm for object detection
 ```bash
 python scripts/utils/NMS.py <det_path>
 ```
