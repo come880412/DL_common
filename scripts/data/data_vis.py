@@ -1,6 +1,6 @@
 """
-Data visualization tool using Wandb
-python scripts/utils/data_vis.py
+Data visualization tool using wandb.
+python scripts/utils/data_vis.py <project_name> <dataset_name> <data_path>
 """
 
 import argparse

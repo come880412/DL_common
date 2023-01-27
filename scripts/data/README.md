@@ -26,3 +26,13 @@ python scripts/data/Make_noisy_image.py <data_dir> <save_dir> <severity>
 <p align="center">
 <img src="https://github.com/come880412/DL_common/blob/main/images/severity_5.png" width=60% height=60%>
 </p>
+
+
+### [data_vis.py](https://github.com/come880412/DL_common/blob/main/scripts/data/data_vis.py)
+Data visualization tool using wandb.
+```bash
+python scripts/utils/data_vis.py <project_name> <dataset_name> <data_path>
+```
+- project_name: Your project name (e.g., Test_visualization)
+- dataset_name: Your dataset name (e.g., remote_sensing) 
+- data_path: Path to your data folder
